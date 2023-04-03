@@ -13,7 +13,7 @@ struct Query: Encodable {
     let query: String
 }
 
-extension ChargetripService {
+struct ChargetripService {
     func createRoute(
             vehicleId: String,
             stateOfCharge: Int,
@@ -24,7 +24,6 @@ extension ChargetripService {
             .scheme(.secure)
             .host(.chargetrip)
             .method(.post)
-            // request.addValue("application/json", forHTTPHeaderField: "content-type")
             .headers(["content-type": "application/json"])
             .path("/graphql")
             .body(Query(

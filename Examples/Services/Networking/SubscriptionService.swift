@@ -111,6 +111,7 @@ class WebsocketManager: NSObject, ObservableObject {
             case .failure(let error):
                 print(error)
             case .success(.data(let data)):
+                print(data)
 //                self.delegate?.didReceiveData(data: data)
                 self.receive()
             case .success(.string(let string)):

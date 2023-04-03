@@ -10,7 +10,6 @@ import Combine
 
 struct GeocodingService {
     func forward(searchText: String) -> AnyPublisher<GeocodingService.GeoLocation, Error> {
-        // swiftlint:disable line_length
         Request<GeoLocation>()
             .scheme(.secure)
             .host(.mapbox)
