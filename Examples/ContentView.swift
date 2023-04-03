@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    var views = [
+        (label: "Navigation example", view: AnyView(NavigationExample()))
+    ]
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            NavigationView {
+                List(views.indices, id: \.self) { index in
+                    NavigationLink(destination: views[index].view) {
+                        Text(views[index].label)
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 

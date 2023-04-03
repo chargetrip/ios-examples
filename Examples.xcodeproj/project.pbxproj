@@ -11,6 +11,13 @@
 		6C2B343829D1D5C1009AC892 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2B343729D1D5C1009AC892 /* ContentView.swift */; };
 		6C2B343A29D1D5C2009AC892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C2B343929D1D5C2009AC892 /* Assets.xcassets */; };
 		6C2B343D29D1D5C2009AC892 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C2B343C29D1D5C2009AC892 /* Preview Assets.xcassets */; };
+		6C2B344429D1D637009AC892 /* NavigationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2B344329D1D637009AC892 /* NavigationExample.swift */; };
+		6C2B344729D1DC00009AC892 /* NavigationExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2B344629D1DC00009AC892 /* NavigationExampleViewModel.swift */; };
+		6C2B344D29D1E31A009AC892 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2B344C29D1E31A009AC892 /* RequestService.swift */; };
+		6C2B345429D1E5B5009AC892 /* GeocodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2B345329D1E5B5009AC892 /* GeocodingService.swift */; };
+		6C2B345729D206CB009AC892 /* GeoLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2B345629D206CB009AC892 /* GeoLocationModel.swift */; };
+		6C2B345C29D242B4009AC892 /* RouteMutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2B345B29D242B4009AC892 /* RouteMutation.swift */; };
+		6C2B346029D243D9009AC892 /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2B345F29D243D9009AC892 /* SubscriptionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		6C2B343729D1D5C1009AC892 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C2B343929D1D5C2009AC892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C2B343C29D1D5C2009AC892 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C2B344329D1D637009AC892 /* NavigationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExample.swift; sourceTree = "<group>"; };
+		6C2B344629D1DC00009AC892 /* NavigationExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExampleViewModel.swift; sourceTree = "<group>"; };
+		6C2B344C29D1E31A009AC892 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		6C2B345329D1E5B5009AC892 /* GeocodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingService.swift; sourceTree = "<group>"; };
+		6C2B345629D206CB009AC892 /* GeoLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationModel.swift; sourceTree = "<group>"; };
+		6C2B345B29D242B4009AC892 /* RouteMutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMutation.swift; sourceTree = "<group>"; };
+		6C2B345F29D243D9009AC892 /* SubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,8 @@
 			children = (
 				6C2B343529D1D5C1009AC892 /* ExamplesApp.swift */,
 				6C2B343729D1D5C1009AC892 /* ContentView.swift */,
+				6C2B344A29D1E29A009AC892 /* Services */,
+				6C2B344529D1D63C009AC892 /* Examples */,
 				6C2B343929D1D5C2009AC892 /* Assets.xcassets */,
 				6C2B343B29D1D5C2009AC892 /* Preview Content */,
 			);
@@ -67,6 +83,67 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6C2B344529D1D63C009AC892 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				6C2B344329D1D637009AC892 /* NavigationExample.swift */,
+				6C2B344629D1DC00009AC892 /* NavigationExampleViewModel.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		6C2B344A29D1E29A009AC892 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6C2B345529D1E5BA009AC892 /* Geocoding */,
+				6C2B344B29D1E2A1009AC892 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6C2B344B29D1E2A1009AC892 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6C2B344C29D1E31A009AC892 /* RequestService.swift */,
+				6C2B345F29D243D9009AC892 /* SubscriptionService.swift */,
+				6C2B345929D24292009AC892 /* Chargetrip */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6C2B345529D1E5BA009AC892 /* Geocoding */ = {
+			isa = PBXGroup;
+			children = (
+				6C2B345329D1E5B5009AC892 /* GeocodingService.swift */,
+				6C2B345829D206F9009AC892 /* Model */,
+			);
+			path = Geocoding;
+			sourceTree = "<group>";
+		};
+		6C2B345829D206F9009AC892 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C2B345629D206CB009AC892 /* GeoLocationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C2B345929D24292009AC892 /* Chargetrip */ = {
+			isa = PBXGroup;
+			children = (
+				6C2B345A29D242A0009AC892 /* Mutations */,
+			);
+			path = Chargetrip;
+			sourceTree = "<group>";
+		};
+		6C2B345A29D242A0009AC892 /* Mutations */ = {
+			isa = PBXGroup;
+			children = (
+				6C2B345B29D242B4009AC892 /* RouteMutation.swift */,
+			);
+			path = Mutations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +151,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C2B344029D1D5C2009AC892 /* Build configuration list for PBXNativeTarget "Examples" */;
 			buildPhases = (
+				6C6B91E829DADF3000518AA5 /* Swift Lint */,
 				6C2B342E29D1D5C1009AC892 /* Sources */,
 				6C2B342F29D1D5C1009AC892 /* Frameworks */,
 				6C2B343029D1D5C1009AC892 /* Resources */,
@@ -132,12 +210,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C6B91E829DADF3000518AA5 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6C2B342E29D1D5C1009AC892 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C2B345429D1E5B5009AC892 /* GeocodingService.swift in Sources */,
+				6C2B344D29D1E31A009AC892 /* RequestService.swift in Sources */,
 				6C2B343829D1D5C1009AC892 /* ContentView.swift in Sources */,
+				6C2B344429D1D637009AC892 /* NavigationExample.swift in Sources */,
+				6C2B344729D1DC00009AC892 /* NavigationExampleViewModel.swift in Sources */,
+				6C2B345729D206CB009AC892 /* GeoLocationModel.swift in Sources */,
+				6C2B346029D243D9009AC892 /* SubscriptionService.swift in Sources */,
+				6C2B345C29D242B4009AC892 /* RouteMutation.swift in Sources */,
 				6C2B343629D1D5C1009AC892 /* ExamplesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
